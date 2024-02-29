@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! 
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot name="cage" xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:property name="parent" default="sensor"/> 
+
+  <link
+    name="cage">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.250" />
+        <!-- value="0.015" />
+        <inertia
+        ixx="0.00087148"
+        ixy="1.2654E-05"
+        ixz="5.3411E-06"
+        iyy="0.00089445"
+        iyz="5.3032E-06"
+        izz="0.00093854" />
+        <inertia
+        ixx="1.0E-06"
+        ixy="1.0E-09"
+        ixz="1.0E-09"
+        iyy="1.0E-06"
+        iyz="1.0E-09"
+        izz="1.0E-06" />-->
+        <inertia
+        ixx="0.0038"
+        ixy="1.0E-07"
+        ixz="1.0E-07"
+        iyy="0.0038"
+        iyz="1.0E-07"
+        izz="0.0073" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="1.5707963267949 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rotors_description/meshes/Cage_stable.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="1.5707963267949 0 0" />
+      <geometry>
+        <!-- <mesh
+          filename="package://rotors_description/meshes/Cage_stable.STL" /> -->
+        <sphere radius="0.255"/>
+      </geometry>
+        <surface>
+          <friction>    <!-- zero contact friction -->
+            <ode>
+              <mu value="0"/>
+              <mu2 value="0"/>
+            </ode>
+          </friction>
+        </surface>
+    </collision>
+  </link>
+<!--
+  <joint
+    name="cage_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0.01"
+      rpy="0 0 1.5708" />
+    <parent
+      link="${parent}" />
+    <child
+      link="cage" />
+    <axis
+      xyz="1 0 0" />
+  </joint>-0.016
+-->
+  <joint
+    name="cage_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 1.5708" />
+    <parent
+      link="${parent}" />
+    <child
+      link="cage" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+
+</robot>

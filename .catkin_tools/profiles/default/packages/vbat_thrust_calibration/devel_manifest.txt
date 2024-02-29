@@ -1,0 +1,5 @@
+rpg_quadrotor_control/utils/vbat_thrust_calibration
+/home/emanuele/traversal_ws/devel/.private/vbat_thrust_calibration/cmake.lock /home/emanuele/traversal_ws/devel/./cmake.lock
+/home/emanuele/traversal_ws/devel/.private/vbat_thrust_calibration/lib/pkgconfig/vbat_thrust_calibration.pc /home/emanuele/traversal_ws/devel/lib/pkgconfig/vbat_thrust_calibration.pc
+/home/emanuele/traversal_ws/devel/.private/vbat_thrust_calibration/share/vbat_thrust_calibration/cmake/vbat_thrust_calibrationConfig-version.cmake /home/emanuele/traversal_ws/devel/share/vbat_thrust_calibration/cmake/vbat_thrust_calibrationConfig-version.cmake
+/home/emanuele/traversal_ws/devel/.private/vbat_thrust_calibration/share/vbat_thrust_calibration/cmake/vbat_thrust_calibrationConfig.cmake /home/emanuele/traversal_ws/devel/share/vbat_thrust_calibration/cmake/vbat_thrust_calibrationConfig.cmake

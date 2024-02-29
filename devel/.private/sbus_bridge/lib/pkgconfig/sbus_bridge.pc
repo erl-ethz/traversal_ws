@@ -1,0 +1,8 @@
+prefix=/home/emanuele/traversal_ws/devel/.private/sbus_bridge
+
+Name: sbus_bridge
+Description: Description of sbus_bridge
+Version: 0.0.0
+Cflags: -I/home/emanuele/traversal_ws/devel/.private/sbus_bridge/include -I/home/emanuele/traversal_ws/src/rpg_quadrotor_control/bridges/sbus_bridge/include
+Libs: -L${prefix}/lib 
+Requires: eigen_catkin message_generation quadrotor_common quadrotor_msgs roscpp std_msgs

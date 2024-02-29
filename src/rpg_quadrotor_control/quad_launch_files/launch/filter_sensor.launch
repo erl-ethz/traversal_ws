@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- Sensor filter !-->
+  <node pkg="force_sensor" 
+    type="sensor_filter" 
+    name="sensor_filter"
+    output="screen">
+    <rosparam file="$(find force_sensor)/parameters/parameters.yaml" />
+    <remap from="ft_sensor_topic" to="rokubimini/ft_sensor0/ft_sensor_readings/wrench" />
+  </node>
+</launch>

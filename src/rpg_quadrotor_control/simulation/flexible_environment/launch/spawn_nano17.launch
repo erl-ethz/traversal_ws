@@ -1,0 +1,16 @@
+<launch>
+	<arg name="use_impedance_controller" default="true" />
+
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+		<arg name="world_name" value="$(find rotors_gazebo)/worlds/basic.world" />
+		<arg name="verbose" value="False"/>
+		<arg name="gui" value="True"/>
+	</include>
+
+
+  <param name="robot_description" 
+		command="$(find xacro)/xacro $(find rotors_description)/urdf/nano17.urdf.xacro" />
+
+  <node name="spawn_model" pkg="gazebo_ros" type="spawn_model" args="-param robot_description -urdf -model ft_sensor" output="screen" />
+
+</launch>

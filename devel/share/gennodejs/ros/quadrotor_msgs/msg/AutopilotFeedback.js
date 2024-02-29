@@ -1,0 +1,1 @@
+/home/emanuele/traversal_ws/devel/.private/quadrotor_msgs/share/gennodejs/ros/quadrotor_msgs/msg/AutopilotFeedback.js

@@ -1,0 +1,1 @@
+/home/emanuele/traversal_ws/devel/.private/mpc/share/common-lisp/ros/mpc/msg/mpc-msg.asd

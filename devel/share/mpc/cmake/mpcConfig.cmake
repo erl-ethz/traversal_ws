@@ -1,0 +1,1 @@
+/home/emanuele/traversal_ws/devel/.private/mpc/share/mpc/cmake/mpcConfig.cmake

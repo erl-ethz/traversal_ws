@@ -1,0 +1,1 @@
+/home/emanuele/traversal_ws/devel/.private/force_sensor/share/roseus/ros/force_sensor/manifest.l

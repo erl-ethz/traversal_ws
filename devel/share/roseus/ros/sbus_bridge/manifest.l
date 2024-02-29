@@ -1,0 +1,1 @@
+/home/emanuele/traversal_ws/devel/.private/sbus_bridge/share/roseus/ros/sbus_bridge/manifest.l

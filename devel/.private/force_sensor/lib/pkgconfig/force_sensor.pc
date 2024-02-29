@@ -1,0 +1,8 @@
+prefix=/home/emanuele/traversal_ws/devel/.private/force_sensor
+
+Name: force_sensor
+Description: Description of force_sensor
+Version: 0.0.0
+Cflags: -I/home/emanuele/traversal_ws/devel/.private/force_sensor/include -I/home/emanuele/traversal_ws/src/rpg_quadrotor_control/force_sensor/include
+Libs: -L${prefix}/lib 
+Requires: message_runtime geometry_msgs eigen_catkin quadrotor_common

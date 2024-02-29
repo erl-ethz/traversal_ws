@@ -1,0 +1,142 @@
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target geometry_msgs_generate_messages_py
+[  0%] Built target quadrotor_msgs_generate_messages_py
+[  0%] Built target roscpp_generate_messages_py
+[  0%] Built target trajectory_msgs_generate_messages_py
+[  0%] Built target geometry_msgs_generate_messages_cpp
+[  0%] Built target geometry_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target quadrotor_msgs_generate_messages_eus
+[  0%] Built target trajectory_msgs_generate_messages_cpp
+[  0%] Built target quadrotor_msgs_generate_messages_cpp
+[  0%] Built target roscpp_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target roscpp_generate_messages_eus
+[  0%] Built target trajectory_msgs_generate_messages_eus
+[  0%] Built target geometry_msgs_generate_messages_lisp
+[  0%] Built target roscpp_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target quadrotor_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target trajectory_msgs_generate_messages_lisp
+[  0%] Built target quadrotor_msgs_generate_messages_nodejs
+[  0%] Built target trajectory_msgs_generate_messages_nodejs
+[  0%] Built target roscpp_generate_messages_nodejs
+[  0%] Built target geometry_msgs_generate_messages_nodejs
+[  0%] Built target nav_msgs_generate_messages_lisp
+[  0%] Built target nav_msgs_generate_messages_eus
+[  0%] Built target nav_msgs_generate_messages_nodejs
+[  0%] Built target nav_msgs_generate_messages_cpp
+[  0%] Built target nav_msgs_generate_messages_py
+[  0%] Built target actionlib_msgs_generate_messages_eus
+[  0%] Built target actionlib_msgs_generate_messages_cpp
+[  0%] Built target rosgraph_msgs_generate_messages_lisp
+[  0%] Built target actionlib_msgs_generate_messages_lisp
+[  0%] Built target actionlib_msgs_generate_messages_nodejs
+[  0%] Built target rosgraph_msgs_generate_messages_eus
+[  0%] Built target rosgraph_msgs_generate_messages_cpp
+[  0%] Built target actionlib_msgs_generate_messages_py
+[  0%] Built target rosgraph_msgs_generate_messages_py
+[  0%] Built target rosgraph_msgs_generate_messages_nodejs
+[  0%] Built target _mpc_generate_messages_check_deps_MpcLog
+[ 14%] Built target mpc_generate_messages_eus
+[ 14%] Built target mpc_generate_messages_py
+[ 17%] Built target mpc_generate_messages_cpp
+[ 21%] Built target mpc_generate_messages_lisp
+[ 25%] Built target mpc_generate_messages_nodejs
+[ 25%] Built target mpc_generate_messages
+[ 78%] Built target mpc_solver
+[ 85%] Built target mpc_wrapper
+[ 89%] [32mBuilding CXX object CMakeFiles/mpc_controller.dir/src/mpc_controller.cpp.o[0m
+In file included from /home/emanuele/traversal_ws/src/rpg_quadrotor_control/mpc/src/mpc_controller.cpp:1:
+/home/emanuele/traversal_ws/src/rpg_quadrotor_control/mpc/src/mpc_controller.cpp: In instantiation of ‘mpc_impedance::MPCController<T>::MPCController(const ros::NodeHandle&) [with T = float]’:
+/home/emanuele/traversal_ws/src/rpg_quadrotor_control/mpc/src/mpc_controller.cpp:355:16:   required from here
+/home/emanuele/traversal_ws/src/rpg_quadrotor_control/mpc/include/mpc_controller.h:88:62: warning: ‘mpc_impedance::MPCController<float>::omega_z_ref_’ will be initialized after [-Wreorder]
+   88 |       T x_ref_, z_ref_, yaw_ref_, vx_ref_, vy_ref_, vz_ref_, omega_z_ref_;
+      |                                                              ^~~~~~~~~~~~
+/home/emanuele/traversal_ws/src/rpg_quadrotor_control/mpc/include/mpc_controller.h:66:39: warning:   ‘Eigen::Matrix<float, 13, 1, 0> mpc_impedance::MPCController<float>::estimate_state_’ [-Wreorder]
+   66 |       Eigen::Matrix<T, NStateSize, 1> estimate_state_;
+      |                                       ^~~~~~~~~~~~~~~
+/home/emanuele/traversal_ws/src/rpg_quadrotor_control/mpc/src/mpc_controller.cpp:7:3: warning:   when initialized here [-Wreorder]
+    7 |   MPCController<T>::MPCController(const ros::NodeHandle& nh) :
+      |   ^~~~~~~~~~~~~~~~
+/home/emanuele/traversal_ws/src/rpg_quadrotor_control/mpc/src/mpc_controller.cpp: In instantiation of ‘quadrotor_common::ControlCommand mpc_impedance::MPCController<T>::run(const quadrotor_common::QuadStateEstimate&, const quadrotor_common::Trajectory&, const mpc_impedance::MPCParams<T>&) [with T = float]’:
+/home/emanuele/traversal_ws/src/rpg_quadrotor_control/mpc/src/mpc_controller.cpp:355:16:   required from here
+/home/emanuele/traversal_ws/src/rpg_quadrotor_control/mpc/src/mpc_controller.cpp:50:50: warning: unused parameter ‘state_estimate’ [-Wunused-parameter]
+   50 |       const quadrotor_common::QuadStateEstimate& state_estimate,
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+In file included from /home/emanuele/traversal_ws/src/rpg_quadrotor_control/mpc/include/mpc_controller.h:4,
+                 from /home/emanuele/traversal_ws/src/rpg_quadrotor_control/mpc/src/mpc_controller.cpp:1:
+/home/emanuele/traversal_ws/src/rpg_quadrotor_control/mpc/include/mpc_params.h: In instantiation of ‘mpc_impedance::MPCParams<T>::MPCParams() [with T = float]’:
+/home/emanuele/traversal_ws/src/rpg_quadrotor_control/mpc/src/mpc_controller.cpp:26:18:   required from ‘mpc_impedance::MPCController<T>::MPCController(const ros::NodeHandle&) [with T = float]’
+/home/emanuele/traversal_ws/src/rpg_quadrotor_control/mpc/src/mpc_controller.cpp:355:16:   required from here
+/home/emanuele/traversal_ws/src/rpg_quadrotor_control/mpc/include/mpc_params.h:170:5: warning: ‘mpc_impedance::MPCParams<float>::max_omega_xy_’ will be initialized after [-Wreorder]
+  170 |   T max_omega_xy_;
+      |     ^~~~~~~~~~~~~
+/home/emanuele/traversal_ws/src/rpg_quadrotor_control/mpc/include/mpc_params.h:169:5: warning:   ‘float mpc_impedance::MPCParams<float>::max_omega_yaw_’ [-Wreorder]
+  169 |   T max_omega_yaw_;
+      |     ^~~~~~~~~~~~~~
+/home/emanuele/traversal_ws/src/rpg_quadrotor_control/mpc/include/mpc_params.h:16:5: warning:   when initialized here [-Wreorder]
+   16 |     MPCParams() :
+      |     ^~~~~~~~~
+[ 92%] [32m[1mLinking CXX shared library /home/emanuele/traversal_ws/devel/.private/mpc/lib/libmpc_controller.so[0m
+[ 92%] Built target mpc_controller
+[ 96%] [32mBuilding CXX object CMakeFiles/mpc_controller_node.dir/src/autopilot_mpc_instance.cpp.o[0m
+In file included from /home/emanuele/traversal_ws/src/rpg_quadrotor_control/control/autopilot/include/autopilot/autopilot.h:230,
+                 from /home/emanuele/traversal_ws/src/rpg_quadrotor_control/mpc/src/autopilot_mpc_instance.cpp:1:
+/home/emanuele/traversal_ws/src/rpg_quadrotor_control/control/autopilot/include/autopilot/./autopilot_inl.h: In instantiation of ‘void autopilot::AutoPilot<Tcontroller, Tparams>::startCallback(const ConstPtr&) [with Tcontroller = position_controller::PositionController; Tparams = position_controller::PositionControllerParams; std_msgs::Empty_<std::allocator<void> >::ConstPtr = boost::shared_ptr<const std_msgs::Empty_<std::allocator<void> > >]’:
+/home/emanuele/traversal_ws/src/rpg_quadrotor_control/control/autopilot/include/autopilot/./autopilot_inl.h:1397:16:   required from here
+/home/emanuele/traversal_ws/src/rpg_quadrotor_control/control/autopilot/include/autopilot/./autopilot_inl.h:681:38: warning: unused parameter ‘msg’ [-Wunused-parameter]
+  681 |     const std_msgs::Empty::ConstPtr& msg) {
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/home/emanuele/traversal_ws/src/rpg_quadrotor_control/control/autopilot/include/autopilot/./autopilot_inl.h: In instantiation of ‘void autopilot::AutoPilot<Tcontroller, Tparams>::forceHoverCallback(const ConstPtr&) [with Tcontroller = position_controller::PositionController; Tparams = position_controller::PositionControllerParams; std_msgs::Empty_<std::allocator<void> >::ConstPtr = boost::shared_ptr<const std_msgs::Empty_<std::allocator<void> > >]’:
+/home/emanuele/traversal_ws/src/rpg_quadrotor_control/control/autopilot/include/autopilot/./autopilot_inl.h:1397:16:   required from here
+/home/emanuele/traversal_ws/src/rpg_quadrotor_control/control/autopilot/include/autopilot/./autopilot_inl.h:725:38: warning: unused parameter ‘msg’ [-Wunused-parameter]
+  725 |     const std_msgs::Empty::ConstPtr& msg) {
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/home/emanuele/traversal_ws/src/rpg_quadrotor_control/control/autopilot/include/autopilot/./autopilot_inl.h: In instantiation of ‘void autopilot::AutoPilot<Tcontroller, Tparams>::landCallback(const ConstPtr&) [with Tcontroller = position_controller::PositionController; Tparams = position_controller::PositionControllerParams; std_msgs::Empty_<std::allocator<void> >::ConstPtr = boost::shared_ptr<const std_msgs::Empty_<std::allocator<void> > >]’:
+/home/emanuele/traversal_ws/src/rpg_quadrotor_control/control/autopilot/include/autopilot/./autopilot_inl.h:1397:16:   required from here
+/home/emanuele/traversal_ws/src/rpg_quadrotor_control/control/autopilot/include/autopilot/./autopilot_inl.h:750:38: warning: unused parameter ‘msg’ [-Wunused-parameter]
+  750 |     const std_msgs::Empty::ConstPtr& msg) {
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/home/emanuele/traversal_ws/src/rpg_quadrotor_control/control/autopilot/include/autopilot/./autopilot_inl.h: In instantiation of ‘void autopilot::AutoPilot<Tcontroller, Tparams>::offCallback(const ConstPtr&) [with Tcontroller = position_controller::PositionController; Tparams = position_controller::PositionControllerParams; std_msgs::Empty_<std::allocator<void> >::ConstPtr = boost::shared_ptr<const std_msgs::Empty_<std::allocator<void> > >]’:
+/home/emanuele/traversal_ws/src/rpg_quadrotor_control/control/autopilot/include/autopilot/./autopilot_inl.h:1397:16:   required from here
+/home/emanuele/traversal_ws/src/rpg_quadrotor_control/control/autopilot/include/autopilot/./autopilot_inl.h:772:38: warning: unused parameter ‘msg’ [-Wunused-parameter]
+  772 |     const std_msgs::Empty::ConstPtr& msg) {
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/home/emanuele/traversal_ws/src/rpg_quadrotor_control/control/autopilot/include/autopilot/./autopilot_inl.h: In instantiation of ‘void autopilot::AutoPilot<Tcontroller, Tparams>::startCallback(const ConstPtr&) [with Tcontroller = mpc_impedance::MPCController<float>; Tparams = mpc_impedance::MPCParams<float>; std_msgs::Empty_<std::allocator<void> >::ConstPtr = boost::shared_ptr<const std_msgs::Empty_<std::allocator<void> > >]’:
+/home/emanuele/traversal_ws/src/rpg_quadrotor_control/mpc/src/autopilot_mpc_instance.cpp:5:27:   required from here
+/home/emanuele/traversal_ws/src/rpg_quadrotor_control/control/autopilot/include/autopilot/./autopilot_inl.h:681:38: warning: unused parameter ‘msg’ [-Wunused-parameter]
+  681 |     const std_msgs::Empty::ConstPtr& msg) {
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/home/emanuele/traversal_ws/src/rpg_quadrotor_control/control/autopilot/include/autopilot/./autopilot_inl.h: In instantiation of ‘void autopilot::AutoPilot<Tcontroller, Tparams>::forceHoverCallback(const ConstPtr&) [with Tcontroller = mpc_impedance::MPCController<float>; Tparams = mpc_impedance::MPCParams<float>; std_msgs::Empty_<std::allocator<void> >::ConstPtr = boost::shared_ptr<const std_msgs::Empty_<std::allocator<void> > >]’:
+/home/emanuele/traversal_ws/src/rpg_quadrotor_control/mpc/src/autopilot_mpc_instance.cpp:5:27:   required from here
+/home/emanuele/traversal_ws/src/rpg_quadrotor_control/control/autopilot/include/autopilot/./autopilot_inl.h:725:38: warning: unused parameter ‘msg’ [-Wunused-parameter]
+  725 |     const std_msgs::Empty::ConstPtr& msg) {
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/home/emanuele/traversal_ws/src/rpg_quadrotor_control/control/autopilot/include/autopilot/./autopilot_inl.h: In instantiation of ‘void autopilot::AutoPilot<Tcontroller, Tparams>::landCallback(const ConstPtr&) [with Tcontroller = mpc_impedance::MPCController<float>; Tparams = mpc_impedance::MPCParams<float>; std_msgs::Empty_<std::allocator<void> >::ConstPtr = boost::shared_ptr<const std_msgs::Empty_<std::allocator<void> > >]’:
+/home/emanuele/traversal_ws/src/rpg_quadrotor_control/mpc/src/autopilot_mpc_instance.cpp:5:27:   required from here
+/home/emanuele/traversal_ws/src/rpg_quadrotor_control/control/autopilot/include/autopilot/./autopilot_inl.h:750:38: warning: unused parameter ‘msg’ [-Wunused-parameter]
+  750 |     const std_msgs::Empty::ConstPtr& msg) {
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/home/emanuele/traversal_ws/src/rpg_quadrotor_control/control/autopilot/include/autopilot/./autopilot_inl.h: In instantiation of ‘void autopilot::AutoPilot<Tcontroller, Tparams>::offCallback(const ConstPtr&) [with Tcontroller = mpc_impedance::MPCController<float>; Tparams = mpc_impedance::MPCParams<float>; std_msgs::Empty_<std::allocator<void> >::ConstPtr = boost::shared_ptr<const std_msgs::Empty_<std::allocator<void> > >]’:
+/home/emanuele/traversal_ws/src/rpg_quadrotor_control/mpc/src/autopilot_mpc_instance.cpp:5:27:   required from here
+/home/emanuele/traversal_ws/src/rpg_quadrotor_control/control/autopilot/include/autopilot/./autopilot_inl.h:772:38: warning: unused parameter ‘msg’ [-Wunused-parameter]
+  772 |     const std_msgs::Empty::ConstPtr& msg) {
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+In file included from /home/emanuele/traversal_ws/src/rpg_quadrotor_control/mpc/include/mpc_controller.h:4,
+                 from /home/emanuele/traversal_ws/src/rpg_quadrotor_control/mpc/src/autopilot_mpc_instance.cpp:2:
+/home/emanuele/traversal_ws/src/rpg_quadrotor_control/mpc/include/mpc_params.h: In instantiation of ‘mpc_impedance::MPCParams<T>::MPCParams() [with T = float]’:
+/home/emanuele/traversal_ws/src/rpg_quadrotor_control/control/autopilot/include/autopilot/./autopilot_inl.h:49:47:   required from ‘autopilot::AutoPilot<Tcontroller, Tparams>::AutoPilot(const ros::NodeHandle&, const ros::NodeHandle&) [with Tcontroller = mpc_impedance::MPCController<float>; Tparams = mpc_impedance::MPCParams<float>]’
+/home/emanuele/traversal_ws/src/rpg_quadrotor_control/mpc/src/autopilot_mpc_instance.cpp:5:27:   required from here
+/home/emanuele/traversal_ws/src/rpg_quadrotor_control/mpc/include/mpc_params.h:170:5: warning: ‘mpc_impedance::MPCParams<float>::max_omega_xy_’ will be initialized after [-Wreorder]
+  170 |   T max_omega_xy_;
+      |     ^~~~~~~~~~~~~
+/home/emanuele/traversal_ws/src/rpg_quadrotor_control/mpc/include/mpc_params.h:169:5: warning:   ‘float mpc_impedance::MPCParams<float>::max_omega_yaw_’ [-Wreorder]
+  169 |   T max_omega_yaw_;
+      |     ^~~~~~~~~~~~~~
+/home/emanuele/traversal_ws/src/rpg_quadrotor_control/mpc/include/mpc_params.h:16:5: warning:   when initialized here [-Wreorder]
+   16 |     MPCParams() :
+      |     ^~~~~~~~~
+[100%] [32m[1mLinking CXX executable /home/emanuele/traversal_ws/devel/.private/mpc/lib/mpc/mpc_controller_node[0m
+[100%] Built target mpc_controller_node

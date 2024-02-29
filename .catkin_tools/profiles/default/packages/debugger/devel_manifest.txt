@@ -1,0 +1,5 @@
+rpg_quadrotor_control/debugger
+/home/emanuele/traversal_ws/devel/.private/debugger/cmake.lock /home/emanuele/traversal_ws/devel/./cmake.lock
+/home/emanuele/traversal_ws/devel/.private/debugger/lib/pkgconfig/debugger.pc /home/emanuele/traversal_ws/devel/lib/pkgconfig/debugger.pc
+/home/emanuele/traversal_ws/devel/.private/debugger/share/debugger/cmake/debuggerConfig-version.cmake /home/emanuele/traversal_ws/devel/share/debugger/cmake/debuggerConfig-version.cmake
+/home/emanuele/traversal_ws/devel/.private/debugger/share/debugger/cmake/debuggerConfig.cmake /home/emanuele/traversal_ws/devel/share/debugger/cmake/debuggerConfig.cmake

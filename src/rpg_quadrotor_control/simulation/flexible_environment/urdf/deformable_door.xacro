@@ -1,0 +1,101 @@
+<?xml version="1.0" ?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+	<xacro:arg name="mass" default="0.1"/>
+  <xacro:arg name="stiffness" default="2"/>
+  <xacro:arg name="damping" default="0.03"/>
+  <xacro:property name="offset_z" value="1.2"/>
+	<xacro:property name="length" value="2"/>
+	<xacro:property name="width" value="2"/>
+  <xacro:property name="height" value="0.1"/>
+  <xacro:property name="space_between" value="${0.2+width}"/>
+	<xacro:property name="upper_limit" value="270"/>
+	<xacro:property name="lower_limit" value="-270"/>
+  <xacro:property name="mass" value="$(arg mass)"/>
+  <xacro:property name="friction" default="${mass*0.01}"/>
+	<xacro:property name="stiffness" default="$(arg stiffness)"/>
+  <xacro:property name="damping" default="$(arg damping)"/>
+
+  <xacro:macro name="window" params="number total">
+    <link name="window_${number}">
+      <inertial>
+        <origin xyz="${width/2} 0 0"/> 
+        <mass value="${mass}" />
+        <inertia  ixx="${1/12*mass*(height**2+width**2)+1/4*mass*length**2}" ixy="0.0"  ixz="0.0"  
+                  iyy="${1/12*mass*(height**2+length**2)}"  iyz="0.0"  izz="${1/12*mass*(width**2+length**2)}" />
+      </inertial>
+      <visual>
+        <origin xyz="${width/(2*total)} 0 0"/>
+        <geometry>
+          <box size="${length/total} ${width} ${height}"/>
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="${width/(2*total)} 0 0"/>
+        <geometry>
+          <box size="${length/total} ${width} ${height}"/>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu value="0.1"/>
+              <mu2 value="0.1"/>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+    </link>
+
+    <joint name="hinge_${number}" type="revolute">
+      <xacro:unless value="${number-1}">
+        <parent link="world"/>
+        <origin xyz="-1.7 0.7 ${offset_z}" rpy="${pi/2} 0 0"/>
+      </xacro:unless>
+      <xacro:if value="${number-1}">
+        <parent link="window_${number-1}"/>
+        <origin xyz="${(length+height)/total} 0 0" rpy="0 0 0"/>
+      </xacro:if>
+      <child link="window_${number}"/>
+      <dynamics damping="${damping}" friction="${friction}" />
+      <axis xyz="0 1 0"/>
+      <limit lower="${lower_limit*pi/180}" upper="${upper_limit*pi/180}" effort="1000.0" velocity="100.0"/>
+    </joint>
+    
+
+    <link name="smooth_termination_${number}">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <cylinder radius="${height/(2*total)}" length="${width}"/>
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <cylinder radius="${height/(2*total)}" length="${width}"/>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu value="0.1"/>
+              <mu2 value="0.1"/>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+    </link>
+
+    <joint name="cyl2box_${number}" type="fixed">
+      <parent link="window_${number}"/>
+      <child link="smooth_termination_${number}"/>
+      <origin xyz="${(width+height/2)/total} 0 0" rpy="${pi/2} 0 0"/>
+    </joint>
+
+
+    <!-- Import all Gazebo-customization elements, including Gazebo colors -->
+    <xacro:include filename="$(find flexible_environment)/urdf/flexible_window.gazebo"/>
+
+  </xacro:macro>
+
+
+</robot>

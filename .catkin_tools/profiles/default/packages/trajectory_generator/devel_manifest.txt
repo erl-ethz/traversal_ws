@@ -1,0 +1,6 @@
+trajectory_generator
+/home/emanuele/traversal_ws/devel/.private/trajectory_generator/cmake.lock /home/emanuele/traversal_ws/devel/./cmake.lock
+/home/emanuele/traversal_ws/devel/.private/trajectory_generator/lib/trajectory_generator/traj_gen /home/emanuele/traversal_ws/devel/lib/trajectory_generator/traj_gen
+/home/emanuele/traversal_ws/devel/.private/trajectory_generator/lib/pkgconfig/trajectory_generator.pc /home/emanuele/traversal_ws/devel/lib/pkgconfig/trajectory_generator.pc
+/home/emanuele/traversal_ws/devel/.private/trajectory_generator/share/trajectory_generator/cmake/trajectory_generatorConfig-version.cmake /home/emanuele/traversal_ws/devel/share/trajectory_generator/cmake/trajectory_generatorConfig-version.cmake
+/home/emanuele/traversal_ws/devel/.private/trajectory_generator/share/trajectory_generator/cmake/trajectory_generatorConfig.cmake /home/emanuele/traversal_ws/devel/share/trajectory_generator/cmake/trajectory_generatorConfig.cmake

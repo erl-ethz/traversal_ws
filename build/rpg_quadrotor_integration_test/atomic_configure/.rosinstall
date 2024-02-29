@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/emanuele/traversal_ws/devel/.private/rpg_quadrotor_integration_test/setup.sh

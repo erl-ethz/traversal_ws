@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>trajectory_generator</name>
+  <version>0.0.0</version>
+  <description>The trajectory_generator package</description>
+
+  <maintainer email="d.morra@santannapisa.it">Daniele Morra</maintainer>
+  <license>ETH</license>
+
+  <author>Daniele Morra</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <buildtool_depend>catkin_simple</buildtool_depend>
+  <buildtool_depend>rostest</buildtool_depend>
+
+  <build_depend>roslaunch</build_depend>
+
+  <depend>autopilot</depend>
+  <depend>eigen_catkin</depend>
+  <depend>polynomial_trajectories</depend>
+  <depend>quadrotor_common</depend>
+  <depend>quadrotor_msgs</depend>
+  <depend>roscpp</depend>
+  <depend>rotors_description</depend>
+  <depend>rotors_gazebo</depend>
+  <depend>rpg_rotors_interface</depend>
+  <depend>std_msgs</depend>
+  <depend>trajectory_generation_helper</depend>
+
+  <export>
+
+  </export>
+</package>

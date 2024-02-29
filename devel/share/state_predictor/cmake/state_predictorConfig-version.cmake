@@ -1,0 +1,1 @@
+/home/emanuele/traversal_ws/devel/.private/state_predictor/share/state_predictor/cmake/state_predictorConfig-version.cmake

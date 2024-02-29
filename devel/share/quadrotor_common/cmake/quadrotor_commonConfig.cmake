@@ -1,0 +1,1 @@
+/home/emanuele/traversal_ws/devel/.private/quadrotor_common/share/quadrotor_common/cmake/quadrotor_commonConfig.cmake

@@ -1,0 +1,1 @@
+/home/emanuele/traversal_ws/devel/.private/mav_msgs/share/gennodejs/ros/mav_msgs/msg/Status.js

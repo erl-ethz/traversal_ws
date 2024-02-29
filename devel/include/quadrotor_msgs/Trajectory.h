@@ -1,0 +1,1 @@
+/home/emanuele/traversal_ws/devel/.private/quadrotor_msgs/include/quadrotor_msgs/Trajectory.h

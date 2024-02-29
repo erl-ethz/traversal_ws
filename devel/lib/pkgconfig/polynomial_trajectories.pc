@@ -1,0 +1,1 @@
+/home/emanuele/traversal_ws/devel/.private/polynomial_trajectories/lib/pkgconfig/polynomial_trajectories.pc

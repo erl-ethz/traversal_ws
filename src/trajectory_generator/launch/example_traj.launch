@@ -1,0 +1,32 @@
+<launch>
+  <arg name="quad_name" default="hummingbird_sensored"/>
+  <arg name="use_impedance_controller" default="true"/>
+
+  <include file="$(find flexible_environment)/launch/environment.launch" >
+    <arg name="quad_name" default="$(arg quad_name)"/>
+    <arg name="use_impedance_controller" value="$(arg use_impedance_controller)" />
+  </include>
+
+  <group ns="$(arg quad_name)" >
+
+    <node pkg="trajectory_generator"
+        type="traj_gen"
+        name="trajectory_generator" />
+
+    <!-- Sensor filter !-->
+    <node pkg="force_sensor" 
+        type="sensor_filter" 
+        name="sensor_filter">
+      <rosparam file="$(find force_sensor)/parameters/parameters.yaml" />
+    </node>
+  </group>
+
+  <!-- Analysis tool: PlotJuggler -->
+  <node name="plotjuggler_with_layout" 
+          pkg="plotjuggler"
+          type="plotjuggler"
+          args="--layout /home/euroracing/ETH_project_insights/Plotjuggler_template/visualize_pos_attitude.xml"
+    />
+
+
+</launch>

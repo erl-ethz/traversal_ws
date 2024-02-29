@@ -1,0 +1,6 @@
+Linked: (/home/emanuele/traversal_ws/devel/.private/rpg_single_board_io/lib/librpg_single_board_io.so, /home/emanuele/traversal_ws/devel/lib/librpg_single_board_io.so)
+Linked: (/home/emanuele/traversal_ws/devel/.private/rpg_single_board_io/lib/pkgconfig/rpg_single_board_io.pc, /home/emanuele/traversal_ws/devel/lib/pkgconfig/rpg_single_board_io.pc)
+Linked: (/home/emanuele/traversal_ws/devel/.private/rpg_single_board_io/lib/rpg_single_board_io/gpio_interrupt_example, /home/emanuele/traversal_ws/devel/lib/rpg_single_board_io/gpio_interrupt_example)
+Linked: (/home/emanuele/traversal_ws/devel/.private/rpg_single_board_io/lib/rpg_single_board_io/voltage_reader, /home/emanuele/traversal_ws/devel/lib/rpg_single_board_io/voltage_reader)
+Linked: (/home/emanuele/traversal_ws/devel/.private/rpg_single_board_io/share/rpg_single_board_io/cmake/rpg_single_board_ioConfig.cmake, /home/emanuele/traversal_ws/devel/share/rpg_single_board_io/cmake/rpg_single_board_ioConfig.cmake)
+Linked: (/home/emanuele/traversal_ws/devel/.private/rpg_single_board_io/share/rpg_single_board_io/cmake/rpg_single_board_ioConfig-version.cmake, /home/emanuele/traversal_ws/devel/share/rpg_single_board_io/cmake/rpg_single_board_ioConfig-version.cmake)

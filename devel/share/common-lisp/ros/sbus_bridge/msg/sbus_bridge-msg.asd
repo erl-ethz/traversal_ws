@@ -1,0 +1,1 @@
+/home/emanuele/traversal_ws/devel/.private/sbus_bridge/share/common-lisp/ros/sbus_bridge/msg/sbus_bridge-msg.asd

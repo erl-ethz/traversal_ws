@@ -1,0 +1,99 @@
+<launch>
+	<arg name="use_mpc_direct" default="true" />
+	<arg name="free_flight" default="false" />
+
+	<include file="$(find gazebo_ros)/launch/empty_world.launch">
+		<arg name="world_name" value="$(find rotors_gazebo)/worlds/basic.world" />
+		<arg name="verbose" value="False"/>
+		<arg name="gui" value="True"/>
+	</include>
+
+	<!-- Convert an xacro and put on parameter server -->
+	<arg name="mass" default="0.4"/>
+	<arg name="stiffness" default="0.156"/>
+	<arg name="damping" default="0.2"/>
+	<arg name="door" default="true"/>
+	<arg name="deformable" default="false"/>
+	<arg name="offset" value="1.2"/>
+	<arg name="length" value="2"/>
+	<arg name="width" value="2"/>
+    <arg name="height" value="0.1"/>
+	<arg name="multi" default="true"/>
+	<param name="robot_description" 
+		command="$(find xacro)/xacro $(find flexible_environment)/urdf/flexible_environment.xacro
+			mass:=$(arg mass) stiffness:=$(arg stiffness) damping:=$(arg damping) 
+			door:=$(arg door) deformable:=$(arg deformable) multi:=$(arg multi)
+			offset:=$(arg offset) length:=$(arg length) width:=$(arg width) height:=$(arg height)"/>
+
+	<!-- Spawn a robot into Gazebo -->
+	<group unless="$(arg free_flight)">
+		<node name="spawn_model" pkg="gazebo_ros" type="spawn_model" args="-param robot_description -urdf -model window_environment" />
+	</group>
+
+	<!-- RotorS stuff to spawn the quadrotor !-->
+	<arg name="quad_name" default="hummingbird_sensored"/>
+	<arg name="mav_name" default="$(arg quad_name)"/>
+	<arg name="model" value="$(find rotors_description)/urdf/mav_generic_odometry_sensor.gazebo"/>
+	<arg name="log_file" default="$(arg mav_name)" />
+	<arg name="x_init" default="0"/>
+	<arg name="y_init" default="0"/>
+	<arg name="enable_logging" default="false" />
+	<arg name="enable_ground_truth" default="true" />
+
+	<group ns="$(arg mav_name)">
+		<include file="$(find rotors_gazebo)/launch/spawn_mav.launch">
+			<arg name="mav_name" value="$(arg mav_name)" />
+			<arg name="model" value="$(arg model)" />
+			<arg name="enable_logging" value="$(arg enable_logging)" />
+			<arg name="enable_ground_truth" value="$(arg enable_ground_truth)" />
+			<arg name="log_file" value="$(arg log_file)"/>
+			<arg name="x" value="$(arg x_init)" />
+			<arg name="y" value="$(arg y_init)" />
+		</include>
+
+	  <!-- RPG stuff !-->
+		<node pkg="rpg_rotors_interface" type="rpg_rotors_interface" 
+				name="rpg_rotors_interface" output="screen" >
+			<rosparam file="$(find rpg_rotors_interface)/parameters/rpg_rotors_interface.yaml" />
+			
+			<remap from="odometry" to="ground_truth/odometry" />
+			<remap from="rpg_rotors_interface/arm" to="bridge/arm" />
+		</node>
+
+		<!-- Autopilot -->
+		<arg name="enable_command_feedthrough" value="true" />
+		<group if="$(arg use_mpc_direct)">
+			<node pkg="mpc" type="mpc_controller_node"
+			 name="mpc_controller_node" output="screen">
+				<rosparam file="$(find state_predictor)/parameters/hummingbird.yaml" />
+				<rosparam file="$(find mpc)/parameters/default.yaml" />
+				<rosparam file="$(find rpg_rotors_interface)/parameters/autopilot.yaml" />
+								
+				<param name="velocity_estimate_in_world_frame" value="false" />
+				<param name="state_estimate_timeout" value="0.1" />
+				<param name="control_command_delay" value="0.05" />
+				<param name="enable_command_feedthrough" value="$(arg enable_command_feedthrough)" />
+				
+				<remap from="autopilot/state_estimate" to="ground_truth/odometry" />
+			</node>
+		</group>
+
+		<group unless="$(arg use_mpc_direct)">
+			<node pkg="autopilot" type="autopilot" name="autopilot" output="screen">
+				<rosparam file="$(find state_predictor)/parameters/hummingbird.yaml" />
+				<rosparam file="$(find rpg_rotors_interface)/parameters/position_controller.yaml" />
+				<rosparam file="$(find rpg_rotors_interface)/parameters/autopilot.yaml" />
+				
+				<param name="position_controller/use_rate_mode" value="True" />
+				
+				<param name="velocity_estimate_in_world_frame" value="false" />
+				<param name="state_estimate_timeout" value="0.1" />
+				<param name="control_command_delay" value="0.05" />
+				<param name="enable_command_feedthrough" value="$(arg enable_command_feedthrough)" />
+				
+				<remap from="autopilot/state_estimate" to="ground_truth/odometry" />
+			</node>
+		</group>
+	</group>
+
+</launch>

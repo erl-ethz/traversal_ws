@@ -1,0 +1,42 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${workspaceFolder}/.vscode/browse.vc.db",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/ziqiao/catkin_ws/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/ziqiao/catkin_ws/src/rpg_quadrotor_control/control/autopilot/include/**",
+        "/home/ziqiao/catkin_ws/src/hector_gazebo/hector_gazebo_plugins/include/**",
+        "/home/ziqiao/catkin_ws/src/hector_gazebo/hector_gazebo_thermal_camera/include/**",
+        "/home/ziqiao/catkin_ws/src/rpg_quadrotor_control/utils/manual_flight_assistant/include/**",
+        "/home/ziqiao/catkin_ws/src/mav_comm/mav_msgs/include/**",
+        "/home/ziqiao/catkin_ws/src/mav_comm/mav_planning_msgs/include/**",
+        "/home/ziqiao/catkin_ws/src/rpg_quadrotor_control/trajectory_planning/polynomial_trajectories/include/**",
+        "/home/ziqiao/catkin_ws/src/rpg_quadrotor_control/control/position_controller/include/**",
+        "/home/ziqiao/catkin_ws/src/rpg_quadrotor_common/quadrotor_common/include/**",
+        "/home/ziqiao/catkin_ws/src/ros_best_practices/ros_package_template/include/**",
+        "/home/ziqiao/catkin_ws/src/rotors_simulator/rotors_control/include/**",
+        "/home/ziqiao/catkin_ws/src/rotors_simulator/rotors_gazebo_plugins/include/**",
+        "/home/ziqiao/catkin_ws/src/rotors_simulator/rotors_hil_interface/include/**",
+        "/home/ziqiao/catkin_ws/src/rotors_simulator/rotors_joy_interface/include/**",
+        "/home/ziqiao/catkin_ws/src/rpg_quadrotor_control/test/rpg_quadrotor_integration_test/include/**",
+        "/home/ziqiao/catkin_ws/src/rpg_quadrotor_control/simulation/rpg_rotors_interface/include/**",
+        "/home/ziqiao/catkin_ws/src/rpg_single_board_io/include/**",
+        "/home/ziqiao/catkin_ws/src/rpg_quadrotor_control/bridges/sbus_bridge/include/**",
+        "/home/ziqiao/catkin_ws/src/smb_common/smb_gazebo/include/**",
+        "/home/ziqiao/catkin_ws/src/rpg_quadrotor_common/state_predictor/include/**",
+        "/home/ziqiao/catkin_ws/src/rpg_quadrotor_control/trajectory_planning/trajectory_generation_helper/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

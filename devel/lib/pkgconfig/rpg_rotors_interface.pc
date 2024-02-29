@@ -1,0 +1,1 @@
+/home/emanuele/traversal_ws/devel/.private/rpg_rotors_interface/lib/pkgconfig/rpg_rotors_interface.pc

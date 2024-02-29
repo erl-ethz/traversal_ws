@@ -1,0 +1,1 @@
+/home/emanuele/traversal_ws/devel/.private/position_impedance_control/lib/pkgconfig/position_impedance_control.pc

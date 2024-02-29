@@ -1,0 +1,2 @@
+mav_comm/mav_comm
+/home/emanuele/traversal_ws/devel/.private/mav_comm/cmake.lock /home/emanuele/traversal_ws/devel/./cmake.lock

@@ -1,0 +1,47 @@
+# Cost on states
+Q_pos_xz:     1             # Cost for horizontal position error
+Q_vel_xz:   1             # Cost for velocity error xy_plane
+Q_vel_y:   1             # Cost for velocity error z_axis
+Q_angular: 0.1             # Cost on angular velocity
+Q_yaw: 1                    # Cost on yaw angle
+Q_torque: 0.01              # Cost for torque
+Q_thrust: 0.01              # Cost for thrust
+Q_dynamics_dismatch: 0.001     # Cost for error between real and impedance dynamics
+
+# Actual params to change and tune
+Q_pos_xz_interaction:    0.1          # Cost for horizontal position error
+Q_vel_xz_interaction:   0.1            # Cost for vel error xy_plane
+Q_vel_y_interaction:   1              # Cost for velocity error z_axis
+Q_angular_interaction: 0.1            # Cost on angular velocity
+Q_yaw_interaction: 0.1                # Cost on yaw angle
+Q_torque_interaction: 0.01               # Cost for torque
+Q_thrust_interaction: 0.01              # Cost for thrust
+Q_dynamics_dismatch_interaction: 0.1     # Cost for error between real and impedance dynamics
+
+QN_pos_xz:   0.1   # Cost for end position reach
+QN_vel_y:    10
+
+# Limits for inputs
+max_phi_theta:  20       # [degrees]
+min_thrust: 0.1            # in g-values
+max_thrust: 2            # in g-values
+max_omega_xy:  3           # rad/s
+max_omega_yaw: 1          # rad/s
+
+# Print information such as timing to terminal
+print_info:       false
+
+# Step of MPC-horizon to take as output
+index_step: 2       # [int]
+
+# Other parameters
+# This comes from an old implementation with active sliding. Since the threshold is 180 deg it never activates, so the sliding is passive as it should be
+k_ref_gain: 5
+threshold_velocity_ref: 0.1       # [m/s]
+threshold_yaw: 180                # [deg] 
+interaction_time: 0.1            # [s]
+index_step_interaction: 10       # [int]
+alpha_interaction_vz: 0.5
+
+# Interaction
+threshold_force_interaction: 0.01     #[N] since this threshold is very small only one set of weights (interaction ones) is used, for both free flight and interaction

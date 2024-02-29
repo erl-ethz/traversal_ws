@@ -1,0 +1,1 @@
+/home/emanuele/traversal_ws/devel/.private/flexible_environment/lib/pkgconfig/flexible_environment.pc

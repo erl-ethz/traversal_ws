@@ -1,0 +1,10 @@
+<launch>
+  <arg name="quad_name" default="hummingbird_sensored"/>
+  <group ns="$(arg quad_name)" >
+    <node pkg="trajectory_generator"
+        type="traj_gen"
+        name="trajectory_generator" >
+      <rosparam file="$(find trajectory_generator)/parameters/traj.yaml" />
+    </node>
+  </group>
+</launch>

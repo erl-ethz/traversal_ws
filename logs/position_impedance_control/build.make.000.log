@@ -1,0 +1,46 @@
+[  0%] Built target trajectory_msgs_generate_messages_py
+[  0%] Built target geometry_msgs_generate_messages_cpp
+[  0%] Built target geometry_msgs_generate_messages_eus
+[  0%] Built target geometry_msgs_generate_messages_nodejs
+[  0%] Built target geometry_msgs_generate_messages_lisp
+[  0%] Built target geometry_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target nav_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target nav_msgs_generate_messages_eus
+[  0%] Built target nav_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target nav_msgs_generate_messages_nodejs
+[  0%] Built target nav_msgs_generate_messages_py
+[  0%] Built target actionlib_msgs_generate_messages_eus
+[  0%] Built target actionlib_msgs_generate_messages_lisp
+[  0%] Built target actionlib_msgs_generate_messages_nodejs
+[  0%] Built target actionlib_msgs_generate_messages_py
+[  0%] Built target quadrotor_msgs_generate_messages_cpp
+[  0%] Built target actionlib_msgs_generate_messages_cpp
+[  0%] Built target quadrotor_msgs_generate_messages_eus
+[  0%] Built target quadrotor_msgs_generate_messages_lisp
+[  0%] Built target quadrotor_msgs_generate_messages_py
+[  0%] Built target quadrotor_msgs_generate_messages_nodejs
+[  0%] Built target roscpp_generate_messages_cpp
+[  0%] Built target roscpp_generate_messages_eus
+[  0%] Built target roscpp_generate_messages_lisp
+[  0%] Built target roscpp_generate_messages_nodejs
+[  0%] Built target roscpp_generate_messages_py
+[  0%] Built target rosgraph_msgs_generate_messages_cpp
+[  0%] Built target rosgraph_msgs_generate_messages_eus
+[  0%] Built target rosgraph_msgs_generate_messages_lisp
+[  0%] Built target trajectory_msgs_generate_messages_cpp
+[  0%] Built target rosgraph_msgs_generate_messages_nodejs
+[  0%] Built target rosgraph_msgs_generate_messages_py
+[  0%] Built target trajectory_msgs_generate_messages_lisp
+[  0%] Built target trajectory_msgs_generate_messages_eus
+[  0%] Built target trajectory_msgs_generate_messages_nodejs
+[ 25%] [32mBuilding CXX object CMakeFiles/position_impedance_controller.dir/library/controller.cpp.o[0m
+[ 50%] [32m[1mLinking CXX shared library /home/emanuele/traversal_ws/devel/.private/position_impedance_control/lib/libposition_impedance_controller.so[0m
+[ 50%] Built target position_impedance_controller
+[ 75%] [32mBuilding CXX object CMakeFiles/impedance_position_controller_node.dir/src/autopilot_impedance_instance.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /home/emanuele/traversal_ws/devel/.private/position_impedance_control/lib/position_impedance_control/impedance_position_controller_node[0m
+[100%] Built target impedance_position_controller_node

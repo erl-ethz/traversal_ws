@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<robot>
+  <gazebo>
+    <plugin name="joint_torsional_spring" filename="libgazebo_joint_torsional_spring.so">
+      <kx>0.018</kx>
+      <set_point>0.0</set_point>
+      <joint>hinge1_${number}</joint>
+    </plugin>
+  </gazebo>
+
+  <gazebo reference="window1_${number}">
+    <gravity>0</gravity>
+    <material>Gazebo/Green</material>
+  </gazebo>
+
+  <gazebo reference="hinge1_link_${number}">
+    <gravity>0</gravity>
+    <material>Gazebo/Red</material>
+  </gazebo>
+<!--
+  <gazebo>
+    <plugin name="joint_torsional_spring" filename="libgazebo_joint_torsional_spring.so">
+      <kx>50</kx>
+      <set_point>0.0</set_point>
+      <joint>hinge2_${number}</joint>
+    </plugin>
+  </gazebo>
+-->
+  <gazebo reference="window2_${number}">
+    <gravity>0</gravity>
+    <material>Gazebo/Green</material>
+  </gazebo>
+
+  <gazebo reference="hinge2_link_${number}">
+    <gravity>0</gravity>
+    <material>Gazebo/Red</material>
+  </gazebo>
+</robot>

@@ -1,0 +1,8 @@
+prefix=/home/emanuele/traversal_ws/devel/.private/debugger
+
+Name: debugger
+Description: Description of debugger
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: mpc

@@ -1,0 +1,8 @@
+prefix=/home/emanuele/traversal_ws/devel/.private/rpg_rotors_interface
+
+Name: rpg_rotors_interface
+Description: Description of rpg_rotors_interface
+Version: 0.0.0
+Cflags: -I/home/emanuele/traversal_ws/src/rpg_quadrotor_control/simulation/rpg_rotors_interface/include
+Libs: -L${prefix}/lib 
+Requires: eigen_catkin mav_msgs nav_msgs quadrotor_common quadrotor_msgs roscpp std_srvs

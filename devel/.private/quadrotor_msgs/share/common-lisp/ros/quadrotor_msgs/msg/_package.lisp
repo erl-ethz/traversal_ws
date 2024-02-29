@@ -1,0 +1,17 @@
+(cl:defpackage quadrotor_msgs-msg
+  (:use )
+  (:export
+   "<AUTOPILOTFEEDBACK>"
+   "AUTOPILOTFEEDBACK"
+   "<CONTROLCOMMAND>"
+   "CONTROLCOMMAND"
+   "<LOWLEVELFEEDBACK>"
+   "LOWLEVELFEEDBACK"
+   "<PID>"
+   "PID"
+   "<TRAJECTORY>"
+   "TRAJECTORY"
+   "<TRAJECTORYPOINT>"
+   "TRAJECTORYPOINT"
+  ))
+

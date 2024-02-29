@@ -1,0 +1,21 @@
+rpg_quadrotor_control/bridges/sbus_bridge
+/home/emanuele/traversal_ws/devel/.private/sbus_bridge/cmake.lock /home/emanuele/traversal_ws/devel/./cmake.lock
+/home/emanuele/traversal_ws/devel/.private/sbus_bridge/include/sbus_bridge/SbusRosMessage.h /home/emanuele/traversal_ws/devel/include/sbus_bridge/SbusRosMessage.h
+/home/emanuele/traversal_ws/devel/.private/sbus_bridge/lib/python3/dist-packages/sbus_bridge/__init__.py /home/emanuele/traversal_ws/devel/lib/python3/dist-packages/sbus_bridge/__init__.py
+/home/emanuele/traversal_ws/devel/.private/sbus_bridge/lib/python3/dist-packages/sbus_bridge/msg/__init__.py /home/emanuele/traversal_ws/devel/lib/python3/dist-packages/sbus_bridge/msg/__init__.py
+/home/emanuele/traversal_ws/devel/.private/sbus_bridge/lib/python3/dist-packages/sbus_bridge/msg/_SbusRosMessage.py /home/emanuele/traversal_ws/devel/lib/python3/dist-packages/sbus_bridge/msg/_SbusRosMessage.py
+/home/emanuele/traversal_ws/devel/.private/sbus_bridge/lib/sbus_bridge/sbus_bridge /home/emanuele/traversal_ws/devel/lib/sbus_bridge/sbus_bridge
+/home/emanuele/traversal_ws/devel/.private/sbus_bridge/lib/pkgconfig/sbus_bridge.pc /home/emanuele/traversal_ws/devel/lib/pkgconfig/sbus_bridge.pc
+/home/emanuele/traversal_ws/devel/.private/sbus_bridge/share/roseus/ros/sbus_bridge/manifest.l /home/emanuele/traversal_ws/devel/share/roseus/ros/sbus_bridge/manifest.l
+/home/emanuele/traversal_ws/devel/.private/sbus_bridge/share/roseus/ros/sbus_bridge/msg/SbusRosMessage.l /home/emanuele/traversal_ws/devel/share/roseus/ros/sbus_bridge/msg/SbusRosMessage.l
+/home/emanuele/traversal_ws/devel/.private/sbus_bridge/share/common-lisp/ros/sbus_bridge/msg/_package.lisp /home/emanuele/traversal_ws/devel/share/common-lisp/ros/sbus_bridge/msg/_package.lisp
+/home/emanuele/traversal_ws/devel/.private/sbus_bridge/share/common-lisp/ros/sbus_bridge/msg/_package_SbusRosMessage.lisp /home/emanuele/traversal_ws/devel/share/common-lisp/ros/sbus_bridge/msg/_package_SbusRosMessage.lisp
+/home/emanuele/traversal_ws/devel/.private/sbus_bridge/share/common-lisp/ros/sbus_bridge/msg/SbusRosMessage.lisp /home/emanuele/traversal_ws/devel/share/common-lisp/ros/sbus_bridge/msg/SbusRosMessage.lisp
+/home/emanuele/traversal_ws/devel/.private/sbus_bridge/share/common-lisp/ros/sbus_bridge/msg/sbus_bridge-msg.asd /home/emanuele/traversal_ws/devel/share/common-lisp/ros/sbus_bridge/msg/sbus_bridge-msg.asd
+/home/emanuele/traversal_ws/devel/.private/sbus_bridge/share/sbus_bridge/cmake/sbus_bridge-msg-extras.cmake /home/emanuele/traversal_ws/devel/share/sbus_bridge/cmake/sbus_bridge-msg-extras.cmake
+/home/emanuele/traversal_ws/devel/.private/sbus_bridge/share/sbus_bridge/cmake/sbus_bridge-msg-paths.cmake /home/emanuele/traversal_ws/devel/share/sbus_bridge/cmake/sbus_bridge-msg-paths.cmake
+/home/emanuele/traversal_ws/devel/.private/sbus_bridge/share/sbus_bridge/cmake/sbus_bridgeConfig.cmake /home/emanuele/traversal_ws/devel/share/sbus_bridge/cmake/sbus_bridgeConfig.cmake
+/home/emanuele/traversal_ws/devel/.private/sbus_bridge/share/sbus_bridge/cmake/sbus_bridgeConfig-version.cmake /home/emanuele/traversal_ws/devel/share/sbus_bridge/cmake/sbus_bridgeConfig-version.cmake
+/home/emanuele/traversal_ws/devel/.private/sbus_bridge/share/gennodejs/ros/sbus_bridge/_index.js /home/emanuele/traversal_ws/devel/share/gennodejs/ros/sbus_bridge/_index.js
+/home/emanuele/traversal_ws/devel/.private/sbus_bridge/share/gennodejs/ros/sbus_bridge/msg/SbusRosMessage.js /home/emanuele/traversal_ws/devel/share/gennodejs/ros/sbus_bridge/msg/SbusRosMessage.js
+/home/emanuele/traversal_ws/devel/.private/sbus_bridge/share/gennodejs/ros/sbus_bridge/msg/_index.js /home/emanuele/traversal_ws/devel/share/gennodejs/ros/sbus_bridge/msg/_index.js

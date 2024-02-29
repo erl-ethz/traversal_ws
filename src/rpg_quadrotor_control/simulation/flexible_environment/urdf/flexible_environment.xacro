@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<robot name="flexible_environment" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <link name="world"/>
+  <!-- Import the xacro model of the window -->
+  <xacro:arg name="door" default="true"/>
+  <xacro:arg name="door" default="false"/>
+  <xacro:if value="$(arg multi)">
+    <xacro:include filename="$(find flexible_environment)/urdf/flexible_door_multi.xacro" />
+  </xacro:if>
+  <xacro:unless value="$(arg multi)">
+    <xacro:if value="$(arg door)">
+      <xacro:if value="$(arg deformable)">
+        <xacro:include filename="$(find flexible_environment)/urdf/deformable_door.xacro" />
+      </xacro:if>
+      <xacro:unless value="$(arg deformable)">
+        <xacro:include filename="$(find flexible_environment)/urdf/flexible_door.xacro" />
+      </xacro:unless>
+    </xacro:if>
+    <xacro:unless value="$(arg door)">
+      <xacro:include filename="$(find flexible_environment)/urdf/flexible_window.xacro" />
+    </xacro:unless>
+  </xacro:unless>
+
+  <!-- Creating the xacro loop to generate n windows -->
+  <xacro:macro name="loop" params="remaining_windows total_windows">
+    <xacro:window number="${remaining_windows}" total="${total_windows}"/>
+    <xacro:if value="${remaining_windows-1}">
+      <xacro:loop remaining_windows="${remaining_windows-1}" total_windows="${total_windows}"/>
+    </xacro:if>
+  </xacro:macro>
+
+  <xacro:if value="$(arg deformable)">
+    <!-- Creating the xacro loop to generate a door made up of n links -->
+    <xacro:macro name="loop" params="remaining_windows total_windows">
+      <xacro:window number="${remaining_windows}" total="${total_windows}"/>
+      <xacro:if value="${remaining_windows-1}">
+        <xacro:loop remaining_windows="${remaining_windows-1}" total_windows="${total_windows}"/>
+      </xacro:if>
+    </xacro:macro>    
+    <!-- Generate the windows -->
+    <xacro:loop remaining_windows="10" total_windows="10"/>
+  </xacro:if>
+
+  <xacro:unless value="$(arg deformable)">
+    <!-- Creating the xacro loop to generate a window/door -->
+    <xacro:window number="0"/>
+  </xacro:unless>
+
+</robot>

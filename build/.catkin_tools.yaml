@@ -1,0 +1,6 @@
+devel_space: /home/emanuele/traversal_ws/devel
+install: false
+install_space: /home/emanuele/traversal_ws/install
+profile: default
+source_space: /home/emanuele/traversal_ws/src
+workspace: /home/emanuele/traversal_ws

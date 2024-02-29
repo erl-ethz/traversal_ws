@@ -1,0 +1,1 @@
+/home/emanuele/traversal_ws/devel/.private/force_sensor/lib/pkgconfig/force_sensor.pc

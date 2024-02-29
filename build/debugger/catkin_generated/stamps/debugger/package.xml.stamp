@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>debugger</name>
+  <version>0.0.0</version>
+  <description>The debugger package</description>
+
+  <maintainer email="dmorra@student.ethz.ch">Daniele Morra</maintainer>
+
+
+  <license>GNU GPL</license>
+
+  <buildtool_depend>rospy</buildtool_depend>
+  <buildtool_depend>catkin</buildtool_depend>
+  <buildtool_depend>catkin_simple</buildtool_depend>
+  <depend>mpc</depend>
+
+  <export>
+  </export>
+</package>

@@ -1,0 +1,4 @@
+Symlinking /home/emanuele/traversal_ws/devel/lib/trajectory_generator/traj_gen
+Symlinking /home/emanuele/traversal_ws/devel/lib/pkgconfig/trajectory_generator.pc
+Symlinking /home/emanuele/traversal_ws/devel/share/trajectory_generator/cmake/trajectory_generatorConfig-version.cmake
+Symlinking /home/emanuele/traversal_ws/devel/share/trajectory_generator/cmake/trajectory_generatorConfig.cmake

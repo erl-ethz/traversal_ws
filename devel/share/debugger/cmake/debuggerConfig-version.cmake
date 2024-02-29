@@ -1,0 +1,1 @@
+/home/emanuele/traversal_ws/devel/.private/debugger/share/debugger/cmake/debuggerConfig-version.cmake

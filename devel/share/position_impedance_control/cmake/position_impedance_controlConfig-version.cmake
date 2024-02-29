@@ -1,0 +1,1 @@
+/home/emanuele/traversal_ws/devel/.private/position_impedance_control/share/position_impedance_control/cmake/position_impedance_controlConfig-version.cmake

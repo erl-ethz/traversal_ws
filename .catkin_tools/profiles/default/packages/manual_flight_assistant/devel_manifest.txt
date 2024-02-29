@@ -1,0 +1,6 @@
+rpg_quadrotor_control/utils/manual_flight_assistant
+/home/emanuele/traversal_ws/devel/.private/manual_flight_assistant/cmake.lock /home/emanuele/traversal_ws/devel/./cmake.lock
+/home/emanuele/traversal_ws/devel/.private/manual_flight_assistant/lib/manual_flight_assistant/manual_flight_assistant /home/emanuele/traversal_ws/devel/lib/manual_flight_assistant/manual_flight_assistant
+/home/emanuele/traversal_ws/devel/.private/manual_flight_assistant/lib/pkgconfig/manual_flight_assistant.pc /home/emanuele/traversal_ws/devel/lib/pkgconfig/manual_flight_assistant.pc
+/home/emanuele/traversal_ws/devel/.private/manual_flight_assistant/share/manual_flight_assistant/cmake/manual_flight_assistantConfig.cmake /home/emanuele/traversal_ws/devel/share/manual_flight_assistant/cmake/manual_flight_assistantConfig.cmake
+/home/emanuele/traversal_ws/devel/.private/manual_flight_assistant/share/manual_flight_assistant/cmake/manual_flight_assistantConfig-version.cmake /home/emanuele/traversal_ws/devel/share/manual_flight_assistant/cmake/manual_flight_assistantConfig-version.cmake

@@ -1,0 +1,1 @@
+/home/emanuele/traversal_ws/devel/.private/force_sensor/lib/python3/dist-packages/force_sensor/__init__.py

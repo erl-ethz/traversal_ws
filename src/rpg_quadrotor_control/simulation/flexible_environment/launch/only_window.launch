@@ -1,0 +1,18 @@
+<launch>
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+		<arg name="world_name" value="$(find rotors_gazebo)/worlds/basic.world" />
+		<arg name="verbose" value="True"/>
+		<arg name="gui" value="True"/>
+	</include>
+
+	<!-- Convert an xacro and put on parameter server -->
+	<arg name="mass" default="0.1"/>
+	<arg name="stiffness" default="0.5"/>
+	<arg name="damping" default="0.2"/>
+	<arg name="door" default="true"/>
+	<arg name="deformable" default="false"/>
+	<param name="robot_description" 
+		command="$(find xacro)/xacro $(find flexible_environment)/urdf/flexible_environment.xacro
+			mass:=$(arg mass) stiffness:=$(arg stiffness) damping:=$(arg damping) door:=$(arg door) deformable:=$(arg deformable)"/>
+  <node name="spawn_model" pkg="gazebo_ros" type="spawn_model" args="-param robot_description -urdf -model window_environment" />
+</launch>

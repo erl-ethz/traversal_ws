@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/emanuele/traversal_ws/devel/.private/rqt_quad_gui/setup.sh

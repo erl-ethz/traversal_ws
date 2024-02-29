@@ -1,0 +1,7 @@
+rpg_quadrotor_control/control/autopilot
+/home/emanuele/traversal_ws/devel/.private/autopilot/cmake.lock /home/emanuele/traversal_ws/devel/./cmake.lock
+/home/emanuele/traversal_ws/devel/.private/autopilot/lib/libautopilot_helper.so /home/emanuele/traversal_ws/devel/lib/libautopilot_helper.so
+/home/emanuele/traversal_ws/devel/.private/autopilot/lib/autopilot/autopilot /home/emanuele/traversal_ws/devel/lib/autopilot/autopilot
+/home/emanuele/traversal_ws/devel/.private/autopilot/lib/pkgconfig/autopilot.pc /home/emanuele/traversal_ws/devel/lib/pkgconfig/autopilot.pc
+/home/emanuele/traversal_ws/devel/.private/autopilot/share/autopilot/cmake/autopilotConfig-version.cmake /home/emanuele/traversal_ws/devel/share/autopilot/cmake/autopilotConfig-version.cmake
+/home/emanuele/traversal_ws/devel/.private/autopilot/share/autopilot/cmake/autopilotConfig.cmake /home/emanuele/traversal_ws/devel/share/autopilot/cmake/autopilotConfig.cmake

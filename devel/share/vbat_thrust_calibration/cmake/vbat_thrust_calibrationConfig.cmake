@@ -1,0 +1,1 @@
+/home/emanuele/traversal_ws/devel/.private/vbat_thrust_calibration/share/vbat_thrust_calibration/cmake/vbat_thrust_calibrationConfig.cmake

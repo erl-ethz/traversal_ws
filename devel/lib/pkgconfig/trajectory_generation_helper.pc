@@ -1,0 +1,1 @@
+/home/emanuele/traversal_ws/devel/.private/trajectory_generation_helper/lib/pkgconfig/trajectory_generation_helper.pc

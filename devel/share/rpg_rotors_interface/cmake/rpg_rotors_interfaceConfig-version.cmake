@@ -1,0 +1,1 @@
+/home/emanuele/traversal_ws/devel/.private/rpg_rotors_interface/share/rpg_rotors_interface/cmake/rpg_rotors_interfaceConfig-version.cmake

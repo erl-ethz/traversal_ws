@@ -1,0 +1,1 @@
+/home/emanuele/traversal_ws/devel/.private/force_sensor/share/common-lisp/ros/force_sensor/srv/_package.lisp

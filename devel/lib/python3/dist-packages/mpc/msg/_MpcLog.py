@@ -1,0 +1,1 @@
+/home/emanuele/traversal_ws/devel/.private/mpc/lib/python3/dist-packages/mpc/msg/_MpcLog.py

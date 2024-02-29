@@ -1,0 +1,9 @@
+impedance_controller:
+  damping_x: 1
+  damping_y: 1
+  damping_z: 5.0
+  mass: 0.742   # drone mass: 0.716; cage mass: 0.015; sensor mass: 0.011
+  ixx: 0.007
+  iyy: 0.007
+  izz: 0.012
+  

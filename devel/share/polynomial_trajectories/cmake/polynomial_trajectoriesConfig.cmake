@@ -1,0 +1,1 @@
+/home/emanuele/traversal_ws/devel/.private/polynomial_trajectories/share/polynomial_trajectories/cmake/polynomial_trajectoriesConfig.cmake

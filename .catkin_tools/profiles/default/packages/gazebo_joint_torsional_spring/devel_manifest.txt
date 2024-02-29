@@ -1,0 +1,5 @@
+rpg_quadrotor_control/simulation/gazebo_joint_torsional_spring_plugin
+/home/emanuele/traversal_ws/devel/.private/gazebo_joint_torsional_spring/cmake.lock /home/emanuele/traversal_ws/devel/./cmake.lock
+/home/emanuele/traversal_ws/devel/.private/gazebo_joint_torsional_spring/lib/pkgconfig/gazebo_joint_torsional_spring.pc /home/emanuele/traversal_ws/devel/lib/pkgconfig/gazebo_joint_torsional_spring.pc
+/home/emanuele/traversal_ws/devel/.private/gazebo_joint_torsional_spring/share/gazebo_joint_torsional_spring/cmake/gazebo_joint_torsional_springConfig-version.cmake /home/emanuele/traversal_ws/devel/share/gazebo_joint_torsional_spring/cmake/gazebo_joint_torsional_springConfig-version.cmake
+/home/emanuele/traversal_ws/devel/.private/gazebo_joint_torsional_spring/share/gazebo_joint_torsional_spring/cmake/gazebo_joint_torsional_springConfig.cmake /home/emanuele/traversal_ws/devel/share/gazebo_joint_torsional_spring/cmake/gazebo_joint_torsional_springConfig.cmake

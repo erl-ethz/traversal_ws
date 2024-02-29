@@ -1,0 +1,1 @@
+/home/emanuele/traversal_ws/devel/.private/quadrotor_msgs/share/quadrotor_msgs/cmake/quadrotor_msgs-msg-extras.cmake

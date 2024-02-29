@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<robot>
+  <gazebo>
+    <plugin name="joint_torsional_spring" filename="libgazebo_joint_torsional_spring.so">
+      <kx>${stiffness}</kx>
+      <set_point>0.0</set_point>
+      <joint>hinge_${number}</joint>
+    </plugin>
+  </gazebo>
+
+  <gazebo reference="window_${number}">
+    <gravity>0</gravity>
+    <material>Gazebo/Green</material>
+  </gazebo>
+
+  <gazebo reference="hinge_link_${number}">
+    <gravity>0</gravity>
+    <material>Gazebo/Red</material>
+  </gazebo>
+</robot>

@@ -1,0 +1,1 @@
+/home/emanuele/traversal_ws/devel/.private/quadrotor_msgs/share/roseus/ros/quadrotor_msgs/msg/TrajectoryPoint.l

@@ -1,0 +1,1 @@
+/home/emanuele/traversal_ws/devel/.private/manual_flight_assistant/share/manual_flight_assistant/cmake/manual_flight_assistantConfig-version.cmake

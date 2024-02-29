@@ -1,0 +1,1 @@
+/home/emanuele/traversal_ws/devel/.private/trajectory_generation_helper/share/trajectory_generation_helper/cmake/trajectory_generation_helperConfig.cmake

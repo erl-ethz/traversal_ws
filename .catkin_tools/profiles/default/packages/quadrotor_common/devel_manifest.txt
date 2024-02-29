@@ -1,0 +1,6 @@
+rpg_quadrotor_common/quadrotor_common
+/home/emanuele/traversal_ws/devel/.private/quadrotor_common/cmake.lock /home/emanuele/traversal_ws/devel/./cmake.lock
+/home/emanuele/traversal_ws/devel/.private/quadrotor_common/lib/libquadrotor_common.so /home/emanuele/traversal_ws/devel/lib/libquadrotor_common.so
+/home/emanuele/traversal_ws/devel/.private/quadrotor_common/lib/pkgconfig/quadrotor_common.pc /home/emanuele/traversal_ws/devel/lib/pkgconfig/quadrotor_common.pc
+/home/emanuele/traversal_ws/devel/.private/quadrotor_common/share/quadrotor_common/cmake/quadrotor_commonConfig.cmake /home/emanuele/traversal_ws/devel/share/quadrotor_common/cmake/quadrotor_commonConfig.cmake
+/home/emanuele/traversal_ws/devel/.private/quadrotor_common/share/quadrotor_common/cmake/quadrotor_commonConfig-version.cmake /home/emanuele/traversal_ws/devel/share/quadrotor_common/cmake/quadrotor_commonConfig-version.cmake

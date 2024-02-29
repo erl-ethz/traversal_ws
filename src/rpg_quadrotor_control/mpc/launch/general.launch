@@ -1,0 +1,48 @@
+<launch>
+  <arg name="quad_name" default="hummingbird_sensored"/>
+  <arg name="use_mpc_direct" value="true"/>
+  <arg name="plotjuggler" default="false"/>
+  <arg name="free_flight" default="false"/>
+  <arg name="multiple_obstacles" default="false"/>
+
+  <!-- Spawn environment and launch the controller -->
+  <group if="$(arg multiple_obstacles)">
+    <include file="$(find flexible_environment)/launch/multi_environment.launch" >
+      <arg name="quad_name" default="$(arg quad_name)"/>
+      <arg name="use_mpc_direct" value="$(arg use_mpc_direct)" />
+      <arg name="free_flight" value="$(arg free_flight)"/>
+      <arg name="door" value="true"/>
+    </include>
+  </group>
+
+  <group unless="$(arg multiple_obstacles)">
+    <include file="$(find flexible_environment)/launch/environment.launch" >
+      <arg name="quad_name" default="$(arg quad_name)"/>
+      <arg name="use_mpc_direct" value="$(arg use_mpc_direct)" />
+      <arg name="free_flight" value="$(arg free_flight)"/>
+      <arg name="door" value="true"/>
+    </include>
+  </group>
+
+  <group ns="$(arg quad_name)" >
+
+    <!-- Sensor filter !-->
+    <node pkg="force_sensor" 
+        type="sensor_filter" 
+        name="sensor_filter"
+        output="screen">
+      <rosparam file="$(find force_sensor)/parameters/parameters.yaml" />
+    </node>
+  </group>
+
+  <!-- Analysis tool: PlotJuggler -->
+  <group if="$(arg plotjuggler)">
+    <node name="plotjuggler_with_layout" 
+            pkg="plotjuggler"
+            type="plotjuggler"
+            args="--layout $(find mpc)/plotjuggler_template/visualize_pos_attitude.xml"
+      />
+  </group>
+
+
+</launch>

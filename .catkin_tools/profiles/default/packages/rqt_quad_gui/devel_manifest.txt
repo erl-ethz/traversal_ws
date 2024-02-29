@@ -1,0 +1,6 @@
+rpg_quadrotor_control/gui/rqt_quad_gui
+/home/emanuele/traversal_ws/devel/.private/rqt_quad_gui/cmake.lock /home/emanuele/traversal_ws/devel/./cmake.lock
+/home/emanuele/traversal_ws/devel/.private/rqt_quad_gui/lib/python3/dist-packages/rqt_quad_gui/__init__.py /home/emanuele/traversal_ws/devel/lib/python3/dist-packages/rqt_quad_gui/__init__.py
+/home/emanuele/traversal_ws/devel/.private/rqt_quad_gui/lib/pkgconfig/rqt_quad_gui.pc /home/emanuele/traversal_ws/devel/lib/pkgconfig/rqt_quad_gui.pc
+/home/emanuele/traversal_ws/devel/.private/rqt_quad_gui/share/rqt_quad_gui/cmake/rqt_quad_guiConfig.cmake /home/emanuele/traversal_ws/devel/share/rqt_quad_gui/cmake/rqt_quad_guiConfig.cmake
+/home/emanuele/traversal_ws/devel/.private/rqt_quad_gui/share/rqt_quad_gui/cmake/rqt_quad_guiConfig-version.cmake /home/emanuele/traversal_ws/devel/share/rqt_quad_gui/cmake/rqt_quad_guiConfig-version.cmake

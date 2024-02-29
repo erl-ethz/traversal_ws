@@ -1,0 +1,1 @@
+/home/emanuele/traversal_ws/devel/.private/rqt_quad_gui/lib/python3/dist-packages/rqt_quad_gui/__init__.py

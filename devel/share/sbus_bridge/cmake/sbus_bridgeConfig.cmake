@@ -1,0 +1,1 @@
+/home/emanuele/traversal_ws/devel/.private/sbus_bridge/share/sbus_bridge/cmake/sbus_bridgeConfig.cmake

@@ -1,0 +1,1 @@
+/home/emanuele/traversal_ws/devel/.private/rqt_quad_gui/lib/pkgconfig/rqt_quad_gui.pc

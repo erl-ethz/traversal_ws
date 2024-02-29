@@ -1,0 +1,1 @@
+/home/emanuele/traversal_ws/devel/.private/sbus_bridge/include/sbus_bridge/SbusRosMessage.h

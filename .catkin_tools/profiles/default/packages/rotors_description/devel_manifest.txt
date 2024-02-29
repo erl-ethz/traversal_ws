@@ -1,0 +1,5 @@
+rotors_simulator/rotors_description
+/home/emanuele/traversal_ws/devel/.private/rotors_description/cmake.lock /home/emanuele/traversal_ws/devel/./cmake.lock
+/home/emanuele/traversal_ws/devel/.private/rotors_description/lib/pkgconfig/rotors_description.pc /home/emanuele/traversal_ws/devel/lib/pkgconfig/rotors_description.pc
+/home/emanuele/traversal_ws/devel/.private/rotors_description/share/rotors_description/cmake/rotors_descriptionConfig-version.cmake /home/emanuele/traversal_ws/devel/share/rotors_description/cmake/rotors_descriptionConfig-version.cmake
+/home/emanuele/traversal_ws/devel/.private/rotors_description/share/rotors_description/cmake/rotors_descriptionConfig.cmake /home/emanuele/traversal_ws/devel/share/rotors_description/cmake/rotors_descriptionConfig.cmake

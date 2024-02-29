@@ -1,0 +1,1 @@
+/home/emanuele/traversal_ws/devel/.private/rpg_single_board_io/share/rpg_single_board_io/cmake/rpg_single_board_ioConfig-version.cmake

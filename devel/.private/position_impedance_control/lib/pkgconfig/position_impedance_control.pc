@@ -1,0 +1,8 @@
+prefix=/home/emanuele/traversal_ws/devel/.private/position_impedance_control
+
+Name: position_impedance_control
+Description: Description of position_impedance_control
+Version: 0.0.0
+Cflags: -I/home/emanuele/traversal_ws/src/rpg_quadrotor_control/position_impedance_control/include
+Libs: -L${prefix}/lib -lposition_impedance_controller
+Requires: autopilot geometry_msgs quadrotor_common roscpp std_msgs trajectory_msgs

@@ -1,0 +1,1 @@
+/home/emanuele/traversal_ws/devel/.private/force_sensor/share/force_sensor/cmake/force_sensor-msg-extras.cmake
